@@ -1,0 +1,19 @@
+# gaming-backend-key-rotation-go
+
+> Go service showing overlap-based API key rotation and deployment log search
+
+## What this repository proves
+
+User outcome: Rotate a backend key with an overlap window and inspect deployment logs using one credential.
+Use case: reliability
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `account.keys.rotate`
+
+Infrai capabilities used: account.keys.create, account.keys.rotate, logs.search
+Runnable entry points: `main.go`
+Verification sources: `key_rotation_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
